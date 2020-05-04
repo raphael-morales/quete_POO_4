@@ -75,6 +75,7 @@ try {
     $car->start(true);
 } catch (Exception $e){
     echo $e->getMessage(). "<br>";
+    $car->start(false);
 } finally {
     echo "Ma voiture roule comme un donut";
 }
